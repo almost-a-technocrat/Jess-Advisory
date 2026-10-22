@@ -16,7 +16,7 @@ import { ComplianceDisclaimer } from './components/ComplianceDisclaimer.tsx';
 import { FinalCta } from './components/FinalCta.tsx';
 import { Footer } from './components/Footer.tsx';
 import { AssessmentModal } from './components/AssessmentModal.tsx';
-import { MessageCircle } from 'lucide-react';
+import { MessageCircle, FileCheck2 } from 'lucide-react';
 import { WHATSAPP_PHONE, DEFAULT_WHATSAPP_MSG } from './data/landingData.ts';
 
 export default function App() {
@@ -27,7 +27,8 @@ export default function App() {
       {/* 1. Header / Navigation */}
       <Header onOpenAssessment={() => setAssessmentModalOpen(true)} />
 
-      <main className="flex-grow">
+      {/* Main Content with bottom padding on mobile to accommodate ergonomic thumb-bar */}
+      <main className="flex-grow pb-20 sm:pb-0">
         {/* 2. Hero Section (Above the Fold) */}
         <Hero onOpenAssessment={() => setAssessmentModalOpen(true)} />
 
@@ -59,19 +60,42 @@ export default function App() {
       {/* Footer */}
       <Footer />
 
-      {/* Floating Quick WhatsApp Action for Mobile / Desktop (Quiet affordance) */}
+      {/* DESKTOP FLOATING WHATSAPP BUTTON (>= 640px) */}
       <a
         href={`https://wa.me/${WHATSAPP_PHONE}?text=${DEFAULT_WHATSAPP_MSG}`}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Direct WhatsApp Consultation with Jess Advisory"
-        className="fixed bottom-6 right-6 z-30 flex items-center gap-2.5 px-4 py-3 bg-emerald-600 hover:bg-emerald-500 active:bg-emerald-700 text-white font-bold text-xs sm:text-sm rounded-full shadow-lg hover:shadow-xl transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2"
+        className="hidden sm:flex fixed bottom-6 right-6 z-30 items-center gap-2.5 px-4 py-3 bg-emerald-600 hover:bg-emerald-500 active:bg-emerald-700 text-white font-bold text-sm rounded-full shadow-lg hover:shadow-xl transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2"
       >
         <MessageCircle className="w-5 h-5 shrink-0" />
-        <span className="hidden sm:inline">WhatsApp Us</span>
+        <span>WhatsApp Us</span>
       </a>
 
-      {/* Free Eligibility Assessment Interactive Modal */}
+      {/* MOBILE FIXED ERGONOMIC THUMB BAR (< 640px) */}
+      {/* Follows Mobile Touch Guidelines (Pattern C: Natural Thumb Zone with < 15% sticky cap) */}
+      <div className="fixed bottom-0 left-0 right-0 z-40 sm:hidden bg-white/95 backdrop-blur-md border-t border-slate-200 px-3 pt-2 pb-[max(0.6rem,env(safe-area-inset-bottom))] shadow-xl flex items-center gap-2">
+        <a
+          href={`https://wa.me/${WHATSAPP_PHONE}?text=${DEFAULT_WHATSAPP_MSG}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex-1 min-h-[46px] inline-flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold text-white bg-emerald-600 active:bg-emerald-700 rounded-xl shadow-xs transition-colors"
+        >
+          <MessageCircle className="w-4 h-4 shrink-0" />
+          <span>WhatsApp</span>
+        </a>
+
+        <button
+          type="button"
+          onClick={() => setAssessmentModalOpen(true)}
+          className="flex-1 min-h-[46px] inline-flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold text-white bg-slate-900 active:bg-slate-800 rounded-xl shadow-xs transition-colors cursor-pointer"
+        >
+          <FileCheck2 className="w-4 h-4 shrink-0" />
+          <span>Free Pre-Check</span>
+        </button>
+      </div>
+
+      {/* Free Eligibility Assessment Interactive Bottom Sheet / Modal */}
       <AssessmentModal
         isOpen={assessmentModalOpen}
         onClose={() => setAssessmentModalOpen(false)}
