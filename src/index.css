@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+/* Custom styling for native HTML details/summary accordions */
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary {
+  list-style: none;
+}
+
+details[open] summary svg {
+  transform: rotate(180deg);
+}
+
+/* Tabular figures for financial tables */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
