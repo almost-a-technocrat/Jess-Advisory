@@ -9,6 +9,16 @@
     <meta property="og:description" content="Structure your financial profile for bank readiness. Independent Malaysian loan and financial funding advisory consultancy for SMEs, property owners, and salaried professionals." />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Trailing slash redirect guard for GitHub Pages repository URLs -->
+    <script>
+      (function() {
+        if (location.pathname && !location.pathname.endsWith('/') && !location.pathname.includes('.')) {
+          location.replace(location.pathname + '/' + location.search + location.hash);
+        }
+      })();
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">

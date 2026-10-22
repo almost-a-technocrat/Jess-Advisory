@@ -7,9 +7,13 @@ import {defineConfig} from 'vite';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig(() => {
+  // If running in GitHub Actions, automatically use /<repository-name>/ so paths
+  // work both with and without trailing slash. Fallback to './' for local/preview.
+  const repository = process.env.GITHUB_REPOSITORY;
+  const base = repository ? `/${repository.split('/')[1]}/` : './';
+
   return {
-    // base: './' ensures assets are loaded via relative paths for GitHub Pages subfolder deployments
-    base: './',
+    base,
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
