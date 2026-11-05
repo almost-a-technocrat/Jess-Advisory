@@ -6,11 +6,12 @@ import {defineConfig} from 'vite';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-export default defineConfig(() => {
-  // If running in GitHub Actions, automatically use /<repository-name>/ so paths
-  // work both with and without trailing slash. Fallback to './' for local/preview.
+export default defineConfig(({mode}) => {
+  // For GitHub Pages on repository 'jess-advisory', production base must be '/jess-advisory/'
   const repository = process.env.GITHUB_REPOSITORY;
-  const base = repository ? `/${repository.split('/')[1]}/` : './';
+  const repoName = repository ? repository.split('/')[1] : 'jess-advisory';
+  const isProd = mode === 'production' || process.env.NODE_ENV === 'production';
+  const base = isProd ? `/${repoName}/` : '/';
 
   return {
     base,
