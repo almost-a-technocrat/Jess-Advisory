@@ -1,1 +1,1 @@
-https://almost-a-technocrat.github.io/jess-advisory
+https://almost-a-technocrat.github.io/Jess-Advisory/
