@@ -30,14 +30,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAssessment }) => {
           {/* Left Column: Headline, Trust Badges, Copy & CTAs */}
           <div className="lg:col-span-7 flex flex-col justify-center">
             
-            {/* Clean unboxed category kicker without pill wrappers, wraps on mobile */}
-            <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[11px] sm:text-xs font-semibold tracking-wider uppercase text-emerald-800 mb-3 sm:mb-4">
-              <span>Independent Financial Advisory</span>
-              <span aria-hidden="true">·</span>
-              <span>Kuala Lumpur & Nationwide</span>
-              <span aria-hidden="true" className="hidden sm:inline">·</span>
-              <span className="hidden sm:inline">18+ Commercial Banks</span>
-            </div>
+
 
             {/* Headline - Carefully scaled for mobile readability without overflow */}
             <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-[2.85rem] font-extrabold text-slate-900 tracking-tight leading-[1.2] sm:leading-[1.15] text-balance">

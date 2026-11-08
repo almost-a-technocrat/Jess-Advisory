@@ -27,7 +27,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenAssessment }) => {
                 Jess Advisory
               </span>
               <span className="text-[10px] tracking-wider uppercase text-slate-500 font-semibold hidden md:block mt-0.5">
-                Financial Readiness Consultancy
+                Independent Financing Advisory
               </span>
             </div>
           </a>
