@@ -53,18 +53,6 @@ export const Header: React.FC<HeaderProps> = ({ onOpenAssessment }) => {
               4-Step Process
             </a>
             <a
-              href="#checklist"
-              className="hover:text-slate-950 transition-colors whitespace-nowrap shrink-0"
-            >
-              Document Checklist
-            </a>
-            <a
-              href="#calculator"
-              className="hover:text-slate-950 transition-colors whitespace-nowrap shrink-0"
-            >
-              Installment Table
-            </a>
-            <a
               href="#faq"
               className="hover:text-slate-950 transition-colors whitespace-nowrap shrink-0"
             >
@@ -132,22 +120,6 @@ export const Header: React.FC<HeaderProps> = ({ onOpenAssessment }) => {
               className="min-h-[48px] flex items-center justify-between px-3 py-2 rounded-lg hover:bg-slate-50 transition-colors"
             >
               <span>4-Step Advisory Process</span>
-              <ArrowRight className="w-4 h-4 text-slate-400" />
-            </a>
-            <a
-              href="#checklist"
-              onClick={() => setMobileMenuOpen(false)}
-              className="min-h-[48px] flex items-center justify-between px-3 py-2 rounded-lg hover:bg-slate-50 transition-colors"
-            >
-              <span>Document Preparation Checklist</span>
-              <ArrowRight className="w-4 h-4 text-slate-400" />
-            </a>
-            <a
-              href="#calculator"
-              onClick={() => setMobileMenuOpen(false)}
-              className="min-h-[48px] flex items-center justify-between px-3 py-2 rounded-lg hover:bg-slate-50 transition-colors"
-            >
-              <span>Repayment & DSR Reference Table</span>
               <ArrowRight className="w-4 h-4 text-slate-400" />
             </a>
             <a

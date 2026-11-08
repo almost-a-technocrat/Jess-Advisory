@@ -7,9 +7,9 @@ import {defineConfig} from 'vite';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig(({mode}) => {
-  // For GitHub Pages on repository 'jess-advisory', production base must be '/jess-advisory/'
+  // For GitHub Pages on repository 'Jess-Advisory', production base matches repository name
   const repository = process.env.GITHUB_REPOSITORY;
-  const repoName = repository ? repository.split('/')[1] : 'jess-advisory';
+  const repoName = repository ? repository.split('/')[1] : 'Jess-Advisory';
   const isProd = mode === 'production' || process.env.NODE_ENV === 'production';
   const base = isProd ? `/${repoName}/` : '/';
 

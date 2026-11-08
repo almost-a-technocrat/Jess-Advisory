@@ -9,8 +9,6 @@ import { Hero } from './components/Hero.tsx';
 import { ComparisonSection } from './components/ComparisonSection.tsx';
 import { ServicesSection } from './components/ServicesSection.tsx';
 import { ProcessSection } from './components/ProcessSection.tsx';
-import { ChecklistSection } from './components/ChecklistSection.tsx';
-import { RepaymentSection } from './components/RepaymentSection.tsx';
 import { FaqSection } from './components/FaqSection.tsx';
 import { ComplianceDisclaimer } from './components/ComplianceDisclaimer.tsx';
 import { FinalCta } from './components/FinalCta.tsx';
@@ -41,13 +39,7 @@ export default function App() {
         {/* 5. The 4-Step Advisory Process */}
         <ProcessSection onOpenAssessment={() => setAssessmentModalOpen(true)} />
 
-        {/* 6. Document Preparation Checklist */}
-        <ChecklistSection />
-
-        {/* 7. Estimated Installment & Repayment Reference Table + DSR Simulator */}
-        <RepaymentSection onOpenAssessment={() => setAssessmentModalOpen(true)} />
-
-        {/* 8. Frequently Asked Questions (Native <details> and <summary> accordions) */}
+        {/* 6. Frequently Asked Questions (Native <details> and <summary> accordions) */}
         <FaqSection />
 
         {/* 9. Trust & Regulatory Compliance Disclaimer */}

@@ -22,9 +22,7 @@ export const ComparisonSection: React.FC<ComparisonProps> = ({ onOpenAssessment 
             Going Directly to a Bank vs. Partnering with Jess Advisory
           </h2>
           <p className="mt-3.5 sm:mt-4 text-xs sm:text-base text-slate-600 leading-relaxed">
-            Most loan applicants in Malaysia do not realize that walking straight into a bank branch
-            submits them to a single officer's monthly KPI and unyielding automated credit algorithms.
-            Here is how an independent advisory changes the odds.
+            Direct branch walk-ins evaluate your file strictly against a single institution’s internal guidelines and credit scoring parameters. Here is how an independent advisory provides broader market perspective and structured preparation.
           </p>
 
           {/* Mobile Comparison Switcher (Mobile Only) */}
@@ -75,7 +73,7 @@ export const ComparisonSection: React.FC<ComparisonProps> = ({ onOpenAssessment 
                 <div>
                   <h3 className="text-base sm:text-lg font-bold text-slate-900">Direct Bank Walk-In</h3>
                   <div className="text-[11px] sm:text-xs text-rose-600 font-semibold mt-0.5">
-                    High Risk of Premature Rejection & Credit Burns
+                    Risk of Premature Submission & Repetitive Credit Inquiries
                   </div>
                 </div>
               </div>
@@ -99,7 +97,7 @@ export const ComparisonSection: React.FC<ComparisonProps> = ({ onOpenAssessment 
             </div>
 
             <div className="mt-6 sm:mt-8 pt-4 border-t border-slate-100 text-[11px] sm:text-xs text-slate-700 italic">
-              Result: Multiple uncoordinated submissions burn your CCRIS footprint, locking you out of bank facilities for 6–12 months.
+              Result: Multiple uncoordinated formal submissions can create rapid inquiry records and increase risk flags across underwriting systems.
             </div>
           </div>
 
@@ -145,7 +143,7 @@ export const ComparisonSection: React.FC<ComparisonProps> = ({ onOpenAssessment 
 
             <div className="mt-6 sm:mt-8 pt-4 border-t border-slate-800 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-4">
               <div className="text-[11px] sm:text-xs text-emerald-300">
-                100% Client Advocacy · Safe Pre-Qualification
+                Independent Client Advocacy · Safe Pre-Qualification
               </div>
               <button
                 type="button"

@@ -16,10 +16,10 @@ export const ComplianceDisclaimer: React.FC = () => {
 
           <div className="mt-3.5 sm:mt-4 space-y-2.5 sm:space-y-3 text-[11px] sm:text-xs leading-relaxed text-slate-600">
             <p>
-              <strong>Independent Consultancy Status:</strong> Jess Advisory operates strictly as an independent management, loan structuring, and financial readiness consultancy in Malaysia. We are <strong>NOT</strong> a bank, licensed money lender under the Moneylenders Act 1951, credit community (Kredit Komuniti), pawnshop, or direct credit provider. We do not provide direct loans, credit advances, or hold client deposits.
+              <strong>Independent Consultancy Status:</strong> Jess Advisory operates strictly as an independent management, loan structuring, and financial readiness consultancy in Malaysia. We are <strong>NOT</strong> a bank, licensed money lender under the Moneylenders Act 1951, credit community (Kredit Komuniti), pawnshop, or direct credit provider. We do not provide direct loans, credit advances, or hold client deposits. Jess Advisory is not an agent, representative, partner, or affiliate of Bank Negara Malaysia, any credit reporting agency, or any specific commercial bank.
             </p>
             <p>
-              <strong>Direct Bank Disbursement:</strong> All financing, credit facilities, overdrafts, and mortgages referenced on this website are issued, underwritten, and disbursed solely by Bank Negara Malaysia (BNM) regulated commercial banks, Islamic banking institutions, or authorized development financial institutions. Loan approvals, interest rates, facility limits, and final covenants are subject to the sole discretion and underwriting policies of the respective lending institutions.
+              <strong>Institutional Underwriting & Disbursement:</strong> All financing, credit facilities, overdrafts, and mortgages referenced on this website are issued, underwritten, and disbursed solely by Bank Negara Malaysia regulated commercial banks, Islamic banking institutions, or authorized development financial institutions. Loan approvals, interest rates, facility limits, and final covenants are subject to the sole discretion and underwriting policies of the respective lending institutions. Jess Advisory does not guarantee credit facility approvals or specific interest rates.
             </p>
             <p className="flex items-start gap-2 pt-1 text-slate-700">
               <AlertCircle className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />

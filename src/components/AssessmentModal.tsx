@@ -69,7 +69,7 @@ export const AssessmentModal: React.FC<AssessmentModalProps> = ({ isOpen, onClos
           <>
             <div className="flex items-center gap-1.5 text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-emerald-800 mb-1.5">
               <ShieldCheck className="w-3.5 h-3.5" />
-              <span>Zero Credit Score Impact · 100% Confidential</span>
+              <span>Confidential Pre-Assessment · No Credit Record Searches</span>
             </div>
 
             <h3 className="text-lg sm:text-2xl font-extrabold text-slate-900 tracking-tight">

@@ -24,7 +24,7 @@ export const Footer: React.FC = () => {
               with Malaysian commercial bank guidelines to maximize approval success.
             </p>
             <div className="pt-1 text-slate-500 text-[11px] leading-relaxed">
-              Strictly non-money lender · 100% Client Advocacy · Bank Underwriting Alignment
+              Strictly non-money lender · Independent Client Advocacy · Institutional Underwriting Alignment
             </div>
           </div>
 
@@ -50,16 +50,6 @@ export const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a href="#checklist" className="hover:text-white transition-colors">
-                  Document Checklist
-                </a>
-              </li>
-              <li>
-                <a href="#calculator" className="hover:text-white transition-colors">
-                  Repayment Matrix
-                </a>
-              </li>
-              <li>
                 <a href="#faq" className="hover:text-white transition-colors">
                   FAQ
                 </a>
@@ -80,7 +70,7 @@ export const Footer: React.FC = () => {
                 Overdraft (OD) Facility Structuring
               </li>
               <li className="text-slate-400">
-                SJPP Government Guarantee Schemes
+                Credit Guarantee Scheme Preparation
               </li>
               <li className="text-slate-400">
                 Mortgage Cash-Out & Debt Consolidation
@@ -89,7 +79,7 @@ export const Footer: React.FC = () => {
                 Personal Financing & DSR Optimization
               </li>
               <li className="text-slate-400">
-                CCRIS / CTOS Pre-Submission Audit
+                Credit Health & Profile Structuring
               </li>
             </ul>
           </div>

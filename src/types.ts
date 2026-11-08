@@ -59,3 +59,17 @@ export interface FaqItem {
   answer: string;
   highlight?: string;
 }
+
+export interface ReviewItem {
+  id: string;
+  author: string;
+  role: string;
+  location: string;
+  category: 'sme' | 'debt' | 'refinance' | 'personal';
+  rating: number;
+  timeAgo: string;
+  outcomeMetric: string;
+  highlightQuote: string;
+  reviewText: string;
+  verifiedOnFacebook: boolean;
+}

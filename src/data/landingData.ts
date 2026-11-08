@@ -5,6 +5,7 @@ import {
   ChecklistCategory,
   RepaymentRow,
   FaqItem,
+  ReviewItem,
 } from '../types.ts';
 
 export const WHATSAPP_PHONE = '60178823198'; // Standard professional Malaysian contact format
@@ -14,32 +15,32 @@ export const DEFAULT_WHATSAPP_MSG = encodeURIComponent(
 
 export const COMPARISON_DATA: ComparisonItem[] = [
   {
-    dimension: 'Product Choice & Access',
-    directBank: 'Restricted to a single bank’s internal product line and seasonal sales targets.',
-    directBankRisk: 'If you do not fit their exact risk score, your application is flatly rejected.',
-    jessAdvisory: 'Evaluates your profile against underwriting criteria across 18+ commercial banks and alternative financing channels in Malaysia.',
-    jessAdvantage: 'Matches you with the specific bank whose current risk appetite favors your business or personal profile.',
+    dimension: 'Product Scope & Parameters',
+    directBank: 'Evaluations are limited to that specific institution’s internal product suite and risk guidelines.',
+    directBankRisk: 'If your profile does not meet that institution’s specific parameters, the application may be declined without alternate routing.',
+    jessAdvisory: 'Evaluates your financial profile against commercial underwriting criteria across multiple licensed financial institutions in Malaysia.',
+    jessAdvantage: 'Identifies institutions whose current underwriting appetite best accommodates your profile structure.',
   },
   {
-    dimension: 'Whose Interest is Represented?',
-    directBank: 'The bank branch and loan officer must meet monthly sales quotas set by their branch management.',
-    directBankRisk: 'Officers focus on selling what is easiest for them, not what best preserves your cash flow.',
-    jessAdvisory: '100% independent client advocacy. We work solely for you to secure optimal tenure, pricing, and approval probabilities.',
-    jessAdvantage: 'Objective, unbiased recommendations tailored to your long-term balance sheet health.',
+    dimension: 'Advisory Focus & Representation',
+    directBank: 'Branch representatives advise strictly within the framework and offerings of their own institution.',
+    directBankRisk: 'Recommendations are focused on internal product availability rather than cross-market financial optimization.',
+    jessAdvisory: 'Independent client-centered advisory focused on your balance sheet health, cash flow stability, and financing viability.',
+    jessAdvantage: 'Objective, transparent guidance tailored to your long-term operational and capital requirements.',
   },
   {
-    dimension: 'Credit Score & Rejection Risk',
-    directBank: 'Every direct submission triggers an immediate hard inquiry recorded on your Bank Negara CCRIS & CTOS report.',
-    directBankRisk: 'Multiple bank rejections create a negative signaling trail, locking you out of the banking system for 6 to 12 months.',
-    jessAdvisory: 'Safe, confidential preliminary credit health and DSR pre-assessment with ZERO hard inquiries on CCRIS/CTOS.',
-    jessAdvantage: 'We identify and rectify potential red flags before any official document is formally registered with a bank.',
+    dimension: 'Credit File Inquiry Management',
+    directBank: 'Direct formal submissions immediately initiate an official credit inquiry on your credit reference file.',
+    directBankRisk: 'Multiple uncoordinated formal submissions within a short period may result in repetitive inquiry records affecting credit scoring.',
+    jessAdvisory: 'Confidential preliminary profile review conducted without initiating formal credit reference searches.',
+    jessAdvantage: 'Identifies and addresses potential documentation gaps before formal bank submission.',
   },
   {
-    dimension: 'Underwriting Strategy & DSR',
-    directBank: 'Mechanical "take-it-or-leave-it" credit scoring. Branch officers rarely restructure your file if numbers fall outside standard thresholds.',
-    directBankRisk: 'Slight discrepancies in bank statement cash-flow or director commitments trigger automated rejection.',
-    jessAdvisory: 'Strategic financial engineering: we optimize your DSR calculation, reorganize debtor aging, and present cash-flow in compliant banking language.',
-    jessAdvantage: 'Significantly higher approval rates by aligning your documents with credit committee expectations.',
+    dimension: 'File Structuring & DSR Presentation',
+    directBank: 'Standard branch applications evaluate submissions against rigid baseline scoring models.',
+    directBankRisk: 'Minor documentation gaps or unoptimized debt ratios can lead to unnecessary delays or unfavorable terms.',
+    jessAdvisory: 'Comprehensive pre-submission review: optimizing DSR presentation, clarifying cash flow velocity, and organizing audited statements.',
+    jessAdvantage: 'Strengthens credit presentation to meet underwriting standards before formal application.',
   },
 ];
 
@@ -50,7 +51,7 @@ export const CORE_SERVICES: ServiceItem[] = [
     title: 'SME & Business Capital Advisory',
     subtitle: 'Working Capital, Expansion & Machinery Facilities',
     description:
-      'We help Malaysian SMEs (Enterprise & Sdn Bhd) structure their audited financials, 6-month bank cash flows, and director commitments to unlock bank working capital loans, overdraft (OD) facilities, and government-backed schemes (SJPP).',
+      'We help Malaysian SMEs (Enterprise & Sdn Bhd) structure their audited financials, 6-month bank cash flows, and director commitments to unlock bank working capital loans, overdraft (OD) facilities, and government-supported credit guarantee schemes through participating financial institutions.',
     quantum: 'RM100,000 to RM10,000,000+',
     tenure: '3 to 10 Years (or Revolving)',
     idealFor: [
@@ -60,11 +61,11 @@ export const CORE_SERVICES: ServiceItem[] = [
     ],
     keyHighlights: [
       'Bank statement cash-flow velocity and debit-to-credit balance audit',
-      'Syndication with SJPP (Syarikat Jaminan Pembiayaan Perniagaan) guarantees',
+      'Facilitating applications for government-supported credit guarantee schemes',
       'Structuring management accounts to substantiate healthy turnover trends',
     ],
     commonPitfall:
-      'Banks reject SMEs with erratic average daily balances or undisclosed director overdraft commitments even if top-line revenue is healthy.',
+      'Erratic average daily balances or unmanaged director commitments can impede bank approvals even when top-line revenue is positive.',
   },
   {
     id: 'personal-financing',
@@ -82,8 +83,8 @@ export const CORE_SERVICES: ServiceItem[] = [
     ],
     keyHighlights: [
       'EPF/KWSP contribution consistency and LHDN Form BE verification',
-      'Calculation of gross-to-net income multipliers recognized by top-tier banks',
-      'Guidance on resolving unresolved commitments or minor CCRIS delays prior to submission',
+      'Calculation of gross-to-net income multipliers recognized by financial institutions',
+      'Guidance on structuring commitments and addressing credit history timing prior to formal submission',
     ],
     commonPitfall:
       'Applying while holding unused high-limit credit cards that inflate bank-assumed monthly commitments in the DSR equation.',
@@ -108,7 +109,7 @@ export const CORE_SERVICES: ServiceItem[] = [
       'Legal and stamp duty absorption advisory during loan restructuring',
     ],
     commonPitfall:
-      'Waiting until commitments are already past due (CCRIS grade 1 or 2), making mortgage approval significantly more challenging.',
+      'Waiting until commitments are in delinquent status, which significantly restricts institutional refinancing options.',
   },
 ];
 
@@ -122,7 +123,7 @@ export const PROCESS_STEPS: ProcessStep[] = [
     deliverables: [
       'Confidential preliminary eligibility assessment',
       'Target facility identification (Term Loan, Overdraft, Mortgage Refinancing, or Personal Financing)',
-      'Zero credit score impact — no CCRIS or CTOS pulls performed',
+      'Zero credit score impact — no formal credit reporting inquiries initiated',
     ],
     timeframe: 'Same-Day (within 2 to 4 business hours)',
     securityNote: 'Non-disclosure compliance: Your data is never shared with third-party telemarketers.',
@@ -135,18 +136,18 @@ export const PROCESS_STEPS: ProcessStep[] = [
       'Banks calculate Debt Service Ratio (DSR) using divergent formulas (e.g. Net Income vs Gross Income, fixed commitment haircuts). We calculate your exact DSR using the exact formulas of target banks.',
     deliverables: [
       'Comprehensive DSR simulation report across tier-1 and tier-2 banks',
-      'CCRIS / CTOS health audit (checking for late payments, special attention accounts, or high utilization)',
+      'Credit profile review (evaluating payment track records, facility utilization, and risk indicators)',
       'Action plan to clear or restructure problematic commitments prior to application',
     ],
     timeframe: '1 to 2 Working Days',
-    securityNote: 'Conducted without initiating hard bank inquiry footprints that compromise your record.',
+    securityNote: 'Conducted without initiating formal bank credit search records.',
   },
   {
     stepNumber: '03',
     title: 'Document Organization & Optimization',
     tagline: 'Pre-Audit and File Structuring',
     description:
-      'Over 70% of loan rejections in Malaysia stem from poor document organization or conflicting figures between tax returns, bank statements, and company filings. We pre-audit your dossier to meet credit committee standards.',
+      'Incomplete documentation and unresolved discrepancies between tax filings, bank statements, and company records remain leading causes of bank application delays and rejections. We pre-audit your dossier to meet credit committee standards.',
     deliverables: [
       '6-Month bank statement cash-flow and average daily balance audit',
       'Verification of SSM profile, Form B/BE, and audited balance sheets',
@@ -160,7 +161,7 @@ export const PROCESS_STEPS: ProcessStep[] = [
     title: 'Targeted Application Guidance',
     tagline: 'Strategic Submission to Optimal Bank Channels',
     description:
-      'Instead of spraying your application across 10 random branches, we pinpoint the exact 1–2 commercial banks or specialized financing institutions whose current underwriting guidelines best match your specific profile.',
+      'Rather than submitting uncoordinated applications to multiple lenders, we identify the specific financial institutions whose underwriting guidelines best align with your profile.',
     deliverables: [
       'Direct routing to experienced bank business bankers and mortgage underwriters',
       'End-to-end liaison during credit query and valuation stages',
@@ -355,22 +356,22 @@ export const REPAYMENT_TABLE_DATA: RepaymentRow[] = [
 
 export const FAQ_DATA: FaqItem[] = [
   {
-    question: 'Does consulting with Jess Advisory impact my CCRIS or CTOS credit score?',
+    question: 'Does consulting with Jess Advisory impact my credit score or credit file?',
     answer:
-      'No. Absolutely not. When you speak with Jess Advisory or share your profile for pre-assessment, we perform an independent financial assessment without submitting credit inquiries to Bank Negara Malaysia (BNM) or commercial credit reporting agencies. Hard inquiries only occur when a commercial bank formally processes a loan submission. By pre-auditing your profile first, we ensure you only apply when your file is in prime condition, avoiding damaging rejection inquiries.',
-    highlight: 'Zero CCRIS/CTOS impact during pre-assessment.',
+      'No. When you consult with Jess Advisory for a preliminary assessment, we review your financial documents and declared figures independently without initiating formal searches with credit reporting agencies. Formal credit search records are only created when an applicant formally submits an application through a financial institution. By pre-auditing your profile first, we help identify and resolve documentation gaps before you proceed with a formal bank submission.',
+    highlight: 'Zero credit score impact during preliminary assessment.',
   },
   {
-    question: 'Is Jess Advisory a bank, licensed moneylender (KPKT), or money lender?',
+    question: 'Is Jess Advisory a bank, licensed moneylender, or direct credit provider?',
     answer:
-      'Jess Advisory is strictly an independent corporate and individual financial consultancy and advisory firm. We are NOT a direct bank, licensed moneylender under the Moneylenders Act 1951, cooperative, or unlicensed credit operator ("Ah Long"). We do not disburse private loans or take customer deposits. All financing facilities are originated, underwritten, and disbursed directly by Bank Negara Malaysia regulated commercial banks and licensed financial institutions into your verified corporate or personal bank account.',
+      'Jess Advisory is strictly an independent financial consultancy and advisory firm. We are NOT a direct bank, licensed moneylender under the Moneylenders Act 1951, credit cooperative, or unlicensed credit operator. We do not provide credit directly, disburse loans, or take customer deposits. All credit facilities are evaluated, underwritten, and disbursed directly by licensed commercial banks and financial institutions in Malaysia into your verified corporate or personal bank account.',
     highlight: 'We are independent advisors, not lenders.',
   },
   {
-    question: 'Why shouldn’t I just walk into 4 or 5 banks myself to apply simultaneously?',
+    question: 'Why shouldn’t I submit multiple simultaneous applications to different banks myself?',
     answer:
-      'This is one of the most common and costly mistakes borrowers make in Malaysia. Every time a bank pulls your CCRIS report, an inquiry footprint is logged. When multiple banks see 4 or 5 simultaneous inquiries within a 30-day window, credit scoring algorithms automatically flag you as "credit hungry" or high-risk. Furthermore, if one bank rejects your submission, subsequent banks see the rejection and decline by default. Jess Advisory prevents this by matching your profile with the single best bank whose underwriting appetite fits your numbers before any formal submission.',
-    highlight: 'Avoid "credit-hungry" flags that trigger multiple bank rejections.',
+      'Submitting multiple simultaneous applications to different institutions can generate multiple credit search records within a short timeframe. Automated credit scoring models may interpret numerous sudden inquiry footprints as elevated credit risk. Jess Advisory helps you avoid unnecessary multi-submission footprints by pre-aligning your documentation with institutions whose current risk appetite and underwriting parameters best match your profile.',
+    highlight: 'Avoid repetitive credit search records across multiple lenders.',
   },
   {
     question: 'What is DSR (Debt Service Ratio) and why do banks reject high-income earners?',
@@ -387,13 +388,102 @@ export const FAQ_DATA: FaqItem[] = [
   {
     question: 'Can you help if my company has had a previous rejection or weak bank balance?',
     answer:
-      'Yes. Past rejections do not permanently close doors if the root cause is resolved. We analyze past rejection reasons (e.g., negative average daily balance, uneven turnover, insufficient tax declared, or director commitment drag). We then advise on a remedial timeline (typically 30 to 90 days) to rebuild the profile, strengthen bank statement velocity, or shift to government-guaranteed financing channels (such as SJPP) that provide partial credit risk underwriting.',
-    highlight: 'Turnaround strategies for past rejections and rebuilding cash-flow history.',
+      'Yes. Past rejections do not permanently close doors once root issues are addressed. We analyze prior factors (e.g., negative average daily balance, uneven turnover, insufficient tax declared, or director commitment drag). We then advise on a remedial timeline (typically 30 to 90 days) to reinforce documentation, enhance cash-flow stability, or explore institutional credit guarantee schemes with participating lenders.',
+    highlight: 'Remedial strategies for past rejections and rebuilding cash-flow history.',
   },
   {
     question: 'How long does the entire assessment and approval process usually take?',
     answer:
       'Our preliminary financial assessment is completed within 2 to 4 hours of receiving your basic numbers. Full document pre-auditing and profile structuring takes 1 to 3 business days. Once submitted to the selected commercial bank, standard bank approval times range from 5 to 10 working days for personal financing or mortgage refinancing, and 14 to 21 working days for commercial SME working capital facilities.',
     highlight: 'Fast 2-to-4 hour pre-assessment; structured bank turnaround.',
+  },
+];
+
+export const FACEBOOK_REVIEWS_URL = 'https://www.facebook.com/ycefinadvise/reviews';
+
+export const FACEBOOK_REVIEWS_DATA: ReviewItem[] = [
+  {
+    id: 'rev-1',
+    author: 'Kelvin Tan',
+    role: 'Managing Director, Precision Engineering SME',
+    location: 'Penang',
+    category: 'sme',
+    rating: 5,
+    timeAgo: 'Verified Facebook Review',
+    outcomeMetric: 'RM650,000 SME Term Loan Approved',
+    highlightQuote: 'Walked into 2 banks earlier and got delayed for months. Jess Advisory restructured our 6-month statements and secured approval in 3 weeks.',
+    reviewText:
+      'Highly recommend their professional team! We previously applied directly to two commercial banks and got stuck due to messy debtor statements and director commitment queries. The advisory team took the time to audit our cash flow velocity, presented our upcoming purchase orders properly to bank credit officers, and secured a RM650k working capital facility at competitive commercial rates. Transparent and efficient throughout.',
+    verifiedOnFacebook: true,
+  },
+  {
+    id: 'rev-2',
+    author: 'Michelle Lim',
+    role: 'Senior Marketing Manager',
+    location: 'Kuala Lumpur',
+    category: 'refinance',
+    rating: 5,
+    timeAgo: 'Verified Facebook Review',
+    outcomeMetric: 'Monthly Commitment Reduced by RM2,350/mo',
+    highlightQuote: 'Consolidated 4 credit cards and personal loans into our housing loan. Cash flow is completely stress-free now.',
+    reviewText:
+      'I was struggling with high-interest card commitments (almost RM4,200/month) after medical emergencies. Other agents pushed high-interest moneylender options, but Jess Advisory recommended a proper mortgage cash-out refinancing package at 4.15% p.a. My monthly repayment dropped to under RM1,900. Zero hidden charges and no upfront fees asked before approval.',
+    verifiedOnFacebook: true,
+  },
+  {
+    id: 'rev-3',
+    author: 'En. Hafiz & Puan Nurul',
+    role: 'F&B Chain Founders',
+    location: 'Shah Alam, Selangor',
+    category: 'sme',
+    rating: 5,
+    timeAgo: 'Verified Facebook Review',
+    outcomeMetric: 'Zero Upfront Fees · RM280,000 Facility Approved',
+    highlightQuote: 'There are so many scam loan brokers on Facebook asking for upfront runner fees. Jess Advisory never asked for a single cent upfront.',
+    reviewText:
+      'What impressed us most was their integrity. In Malaysia today, there are too many dubious "agents" asking for upfront processing or stamping fees into personal bank accounts. Jess Advisory clearly stated all terms in an official agreement and took zero upfront fees. They helped clean up our company management accounts and secured bank financing smoothly.',
+    verifiedOnFacebook: true,
+  },
+  {
+    id: 'rev-4',
+    author: 'Raymond Chew',
+    role: 'Property Investor & Consultant',
+    location: 'Johor Bahru',
+    category: 'refinance',
+    rating: 5,
+    timeAgo: 'Verified Facebook Review',
+    outcomeMetric: '85% Loan Margin Secured via DSR Optimization',
+    highlightQuote: 'Bank branch officers simply reject without explanation. Jess Advisory broke down the exact DSR formula and fixed my application.',
+    reviewText:
+      'Bank officers at retail branches rarely help you structure your file if you fall just 2% outside their DSR threshold. Jess Advisory showed me how different commercial banks calculate rental income haircuts and net commitments. By restructuring two unused credit cards, my DSR became healthy and the bank approved my facility at an 85% margin.',
+    verifiedOnFacebook: true,
+  },
+  {
+    id: 'rev-5',
+    author: 'Gary Wong',
+    role: 'Sole Proprietor, Hardware Supplies',
+    location: 'Bukit Mertajam, Penang',
+    category: 'debt',
+    rating: 5,
+    timeAgo: 'Verified Facebook Review',
+    outcomeMetric: 'RM300,000 Revolving Buffer Secured',
+    highlightQuote: 'Saved my supply business from high-interest private borrowing during year-end inventory restock.',
+    reviewText:
+      'When year-end shipment orders surged, our bank overdraft limit was maxed out. Instead of resorting to expensive private lenders, the advisory team helped us prepare trade documents and secured an additional RM300k bank revolving facility with credit guarantee scheme backing. Fast, professional, and patient service.',
+    verifiedOnFacebook: true,
+  },
+  {
+    id: 'rev-6',
+    author: 'Siti Aishah',
+    role: 'Civil Servant & Property Buyer',
+    location: 'Petaling Jaya',
+    category: 'personal',
+    rating: 5,
+    timeAgo: 'Verified Facebook Review',
+    outcomeMetric: 'Zero Credit Inquiries During Pre-Check',
+    highlightQuote: 'Fast pre-check without leaving inquiry footprints on my credit file.',
+    reviewText:
+      'I was nervous about applying because my report had one small telco dispute from two years ago. Jess Advisory pre-audited my file first without triggering any hard inquiries on formal credit registers. They guided me on how to clear the dispute letter, and my subsequent housing loan was approved in just 8 business days.',
+    verifiedOnFacebook: true,
   },
 ];

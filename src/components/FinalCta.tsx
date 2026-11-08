@@ -17,7 +17,7 @@ export const FinalCta: React.FC<FinalCtaProps> = ({ onOpenAssessment }) => {
         {/* Unboxed Kicker */}
         <div className="inline-flex items-center gap-1.5 text-[11px] sm:text-xs font-semibold tracking-wider uppercase text-emerald-400 mb-3 sm:mb-4">
           <Lock className="w-3.5 h-3.5 shrink-0" />
-          <span>Confidential Pre-Qualification · Zero Inquiries on CCRIS</span>
+          <span>Confidential Pre-Qualification · No Credit File Searches</span>
         </div>
 
         {/* Headline */}
@@ -60,7 +60,7 @@ export const FinalCta: React.FC<FinalCtaProps> = ({ onOpenAssessment }) => {
           </div>
           <div className="flex items-center gap-1.5">
             <span aria-hidden="true">·</span>
-            <span>Zero CCRIS Pulls</span>
+            <span>No Credit Inquiries</span>
           </div>
           <div className="flex items-center gap-1.5">
             <span aria-hidden="true">·</span>
@@ -68,7 +68,7 @@ export const FinalCta: React.FC<FinalCtaProps> = ({ onOpenAssessment }) => {
           </div>
           <div className="flex items-center gap-1.5">
             <span aria-hidden="true">·</span>
-            <span>Malaysian Banks Network</span>
+            <span>Institutional Criteria Alignment</span>
           </div>
         </div>
 

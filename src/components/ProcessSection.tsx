@@ -88,7 +88,7 @@ export const ProcessSection: React.FC<ProcessProps> = ({ onOpenAssessment }) => 
               Want to find out where your profile stands today?
             </h4>
             <p className="text-xs sm:text-sm text-slate-600 mt-1">
-              Start with Step 01 today. We evaluate your baseline numbers with zero credit score footprint.
+              Start with Step 01 today. We evaluate your baseline numbers without initiating formal credit searches.
             </p>
           </div>
           <button

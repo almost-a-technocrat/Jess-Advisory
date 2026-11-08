@@ -181,7 +181,7 @@ export const ServicesSection: React.FC<ServicesProps> = ({ onOpenAssessment }) =
                 Direct Bank Underwriting Alignment
               </div>
               <div className="text-[11px] sm:text-xs text-slate-400 mt-1.5 leading-relaxed">
-                We work directly with commercial business managers across Maybank, CIMB, Public Bank, RHB, Hong Leong, AmBank, Alliance, UOB, OCBC, Standard Chartered, HSBC, and government development institutions.
+                We assist clients in navigating underwriting guidelines across licensed commercial banks, Islamic banking institutions, and development financial institutions in Malaysia.
               </div>
             </div>
           </div>

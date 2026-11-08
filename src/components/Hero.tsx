@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ShieldCheck, Users, FileCheck, ArrowRight, MessageCircle, CheckCircle2 } from 'lucide-react';
+import { ShieldCheck, Users, ArrowRight, MessageCircle, CheckCircle2 } from 'lucide-react';
 import { WHATSAPP_PHONE } from '../data/landingData.ts';
 import heroImage from '../assets/images/hero_financial_advisory_1792654865023.jpg';
 
@@ -56,9 +56,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAssessment }) => {
               <div className="flex items-start gap-3 p-3 sm:p-3.5 rounded-xl bg-slate-50 border border-slate-200/80">
                 <ShieldCheck className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                 <div>
-                  <div className="text-xs sm:text-sm font-bold text-slate-900">Zero Credit Score Impact</div>
+                  <div className="text-xs sm:text-sm font-bold text-slate-900">Confidential Pre-Assessment</div>
                   <div className="text-[11px] sm:text-xs text-slate-500 mt-0.5">
-                    Pre-assessed without hard CCRIS or CTOS inquiries.
+                    Conducted without formal credit reference inquiries.
                   </div>
                 </div>
               </div>
@@ -66,7 +66,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAssessment }) => {
               <div className="flex items-start gap-3 p-3 sm:p-3.5 rounded-xl bg-slate-50 border border-slate-200/80">
                 <Users className="w-5 h-5 text-slate-800 shrink-0 mt-0.5" />
                 <div>
-                  <div className="text-xs sm:text-sm font-bold text-slate-900">100% Client Advocacy</div>
+                  <div className="text-xs sm:text-sm font-bold text-slate-900">Independent Client Advocacy</div>
                   <div className="text-[11px] sm:text-xs text-slate-500 mt-0.5">
                     Independent consulting — on your side, not the bank’s.
                   </div>
@@ -87,27 +87,27 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAssessment }) => {
               </button>
 
               <a
-                href="#checklist"
+                href="#process"
                 className="w-full sm:w-auto min-h-[48px] inline-flex items-center justify-center gap-2 px-5 py-3.5 text-sm font-semibold text-slate-700 bg-white hover:bg-slate-100 border border-slate-300 rounded-xl transition-colors whitespace-nowrap"
               >
-                <FileCheck className="w-4 h-4 text-slate-500 shrink-0" />
-                <span>View Document Checklist</span>
+                <span>View 4-Step Process</span>
+                <ArrowRight className="w-4 h-4 text-slate-400" />
               </a>
             </div>
 
             {/* Proof Metric Adjacency - Tight responsive grid on small mobile */}
             <div className="mt-6 sm:mt-8 pt-5 sm:pt-6 border-t border-slate-200/80 grid grid-cols-3 gap-2 sm:gap-4 max-w-lg">
               <div className="text-center sm:text-left">
-                <div className="text-lg sm:text-2xl font-extrabold text-slate-900 tabular-nums">RM180M+</div>
-                <div className="text-[10px] sm:text-xs text-slate-500 font-medium mt-0.5">Assisted Facilities</div>
+                <div className="text-base sm:text-xl font-extrabold text-slate-900">Pre-Audit</div>
+                <div className="text-[10px] sm:text-xs text-slate-500 font-medium mt-0.5">Document Structuring</div>
               </div>
               <div className="text-center sm:text-left">
-                <div className="text-lg sm:text-2xl font-extrabold text-slate-900 tabular-nums">94.2%</div>
-                <div className="text-[10px] sm:text-xs text-slate-500 font-medium mt-0.5">Pre-Audit Approval</div>
+                <div className="text-base sm:text-xl font-extrabold text-slate-900">Multi-Bank</div>
+                <div className="text-[10px] sm:text-xs text-slate-500 font-medium mt-0.5">Criteria Matching</div>
               </div>
               <div className="text-center sm:text-left">
-                <div className="text-lg sm:text-2xl font-extrabold text-slate-900 tabular-nums">18+</div>
-                <div className="text-[10px] sm:text-xs text-slate-500 font-medium mt-0.5">Bank Criteria Network</div>
+                <div className="text-base sm:text-xl font-extrabold text-slate-900">Zero Upfront</div>
+                <div className="text-[10px] sm:text-xs text-slate-500 font-medium mt-0.5">Assessment Fees</div>
               </div>
             </div>
 
@@ -140,7 +140,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAssessment }) => {
               <div className="flex items-center justify-between pb-3 border-b border-slate-200">
                 <span className="text-xs sm:text-sm font-bold text-slate-900">Quick Profile Pre-Assessment</span>
                 <span className="text-[11px] sm:text-xs font-medium text-emerald-700 flex items-center gap-1">
-                  <CheckCircle2 className="w-3.5 h-3.5" /> No CCRIS Impact
+                  <CheckCircle2 className="w-3.5 h-3.5" /> No Credit Inquiries
                 </span>
               </div>
 
